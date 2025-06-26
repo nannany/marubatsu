@@ -1,0 +1,46 @@
+
+{
+  "name": "@nannany/marubatsu",
+  "version": "1.0.0",
+  "description": "A simple tic-tac-toe game for the CLI.",
+  "main": "dist/cli.js",
+  "type": "module",
+  "bin": {
+    "marubatsu": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx source/cli.tsx",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nannany/marubatsu.git"
+  },
+  "keywords": [
+    "cli",
+    "game",
+    "tic-tac-toe",
+    "ink",
+    "react"
+  ],
+  "author": "nannany",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nannany/marubatsu/issues"
+  },
+  "homepage": "https://github.com/nannany/marubatsu#readme",
+  "dependencies": {
+    "ink": "^6.0.1",
+    "react": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.4",
+    "@types/react": "^19.1.8",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
