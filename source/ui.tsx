@@ -116,6 +116,7 @@ const App = () => {
 			if (key.return) {
 				const selectedSymbol = selectionCursor === 0 ? 'o' : 'x';
 				setPlayerSymbol(selectedSymbol);
+				setBoard(Array(9).fill(null));
 				setGameState('playing');
 				// If player chooses 'x', CPU ('o') should make the first move.
 				if (selectedSymbol === 'x') {
