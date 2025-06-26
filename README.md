@@ -1,0 +1,2 @@
+# marubatsu
+cli marubatsu game
